@@ -16,15 +16,23 @@
         td.num{
             text-align: right;
         }
+        caption{
+            font-size: 1.5em;
+            font-weight: bold;
+            padding: 10px;
+            background-color: aquamarine;
+            border: 1px solid black;
+        }
     </style>
 </head>
 <body>
     <h1>uso de tabelas grandes</h1>
     <table>
+        <caption>populaçao das und federativas</caption>
         <thead>
             <tr>
-                <th>estado</th>
-                <th>populaçao</th>
+                <th scope="col">estado</th>
+                <th scope="col" style="width: 60px;">populaçao</th>
             </tr>
         </thead>
         <tbody>
@@ -43,7 +51,7 @@
         </tbody>
         <tfoot>
             <tr>
-                <th>total de habitantes</th>
+                <th scope="row">total de habitantes</th>
                 <td class="num"><strong>21024550500</strong></td>
             </tr>
 
